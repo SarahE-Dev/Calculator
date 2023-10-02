@@ -9,6 +9,78 @@ let calculator = document.querySelector('.calculator');
 let buttons = document.querySelectorAll('button');
 let label = document.querySelector('label');
 
+window.addEventListener('keydown', (event)=>{
+    switch(event.key){
+        case '1':
+            screen(1);
+            break;
+        case '2':
+            screen(2);
+            break;
+        case '3':
+            screen(3);
+            break;
+        case '4':
+            screen(4);
+            break;
+        case '5':
+            screen(5);
+            break;
+        case '6':
+            screen(6);
+            break;
+        case '7':
+            screen(7);
+            break;
+        case '8':
+            screen(8);
+            break;
+        case '9':
+            screen(9);
+            break;
+        case '0':
+            screen(0);
+            break;
+        case '.':
+            screen('.');
+            break;
+        case '*':
+            operator('*');
+            break;
+        case '/':
+            operator('/');
+            break;
+        case '+':
+            operator('+');
+            break;
+        case '-':
+            operator('-');
+            break;
+        case 'Backspace':
+            cancel();
+            break;
+        case '=':
+            exe('=');
+            break;
+        case 'Enter':
+            exe('=');
+            break;
+        case 'Delete':
+            cls();
+            break;
+        case 'Escape':
+            cls();
+            break;
+        case '%':
+            percentage('%');
+            break;
+        case ';':
+            squareRoot();
+            break;
+        
+    }
+})
+
 
 
 checkbox.addEventListener('change', function(){
@@ -104,6 +176,7 @@ function percentage(v){
     if(operate === '+' || operate === '-'){
     equation = numbers[0] + operate + total;
     }
+    
 }
 
 function exe(v){
@@ -114,6 +187,7 @@ function exe(v){
 function cancel(){
     val.value=val.value.substr(0,val.value.length-1);
     equationDisplay.textContent=equationDisplay.textContent.substr(0,equationDisplay.textContent.length-1);
-    equation-equationDisplay.textContent[equationDisplay.textContent.length-1]
+    equation-equationDisplay.textContent[equationDisplay.textContent.length-1];
+    equation = equation.substr(0, equation.length-1)
 }
 
