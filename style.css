@@ -23,6 +23,8 @@
 
 label {
     font-size: 22px;
+    color: royalblue;
+    text-shadow: 2px 1px darkslateblue;
 }
 
 
@@ -34,7 +36,7 @@ label {
     left: 25%;
     width: 300px;
     border-radius: 20px;
-    box-shadow: 2px 3px;
+    box-shadow: 2px 3px darkmagenta;
     border: 2px solid grey;
     padding: 20px;
 }
@@ -49,7 +51,8 @@ label {
 .display{
     position: absolute;
     top: 10%;
-    right: 15%
+    right: 15%;
+    color: white;
 }
 
 #inp {
@@ -57,10 +60,11 @@ label {
     height: 100px;
     width: 90%;
     border-radius: 10px;
-    box-shadow: -2px 3px;
+    box-shadow: -2px 3px darkmagenta;
     font-size: 40px;
     text-align: right;
     padding-top: 30px;
+    color: white;
 }
 
 .buttons {
@@ -72,7 +76,7 @@ label {
 }
 
 button {
-    background-color: black;
+    background: linear-gradient(to bottom, royalblue, deeppink);
     color: white;
     border-radius: 7px;
     padding: 10px;
@@ -83,10 +87,11 @@ button {
     margin: 7px;
     font-size: 20px;
     font-weight: bolder;
-    box-shadow: 2px 3px grey;
+    box-shadow: 2px 3px darkmagenta;
 }
 
 button:hover {
-    background-color: deeppink;
+    background: deeppink;
+    color: yellow;
 }
 

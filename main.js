@@ -95,20 +95,20 @@ function darkmode(){
     main.style.background = 'linear-gradient(to right, darkmagenta, indigo, black)';
     calculator.style.backgroundColor = 'black'
     buttons.forEach((item)=>{
-        item.style.backgroundColor = 'darkviolet'
+        item.style.background = 'linear-gradient(to bottom, darkorchid, royalblue, darkmagenta)'
     })
-    val.style.background = 'linear-gradient(to bottom, deeppink, magenta)';
-    val.style.color = 'white';
-    equationDisplay.style.color = 'white';
+    val.style.background = 'linear-gradient(to bottom, deeppink, darkmagenta)';
+    val.style.color = 'black';
+    equationDisplay.style.color = 'black';
     label.style.color = 'white';
     buttons.forEach((item)=>{
         item.onmouseover = ()=>{
-            item.style.backgroundColor = 'white'
+            item.style.background = 'white'
             item.style.color = 'black'
         }
         item.onmouseout = ()=>{
-            item.style.backgroundColor = 'darkviolet';
-            item.style.color = 'white';
+            item.style.background = 'linear-gradient(to bottom, darkorchid, royalblue, darkmagenta)';
+            item.style.color = 'white'
         }
     })
    
@@ -119,19 +119,19 @@ function lightmode(){
     main.style.background = 'linear-gradient(to right, deeppink, darkorchid, royalblue)';
     calculator.style.backgroundColor = 'darkorchid'
     buttons.forEach((item)=>{
-        item.style.backgroundColor = 'black'
+        item.style.background = 'linear-gradient(to bottom, royalblue, deeppink)'
     })
     val.style.background = 'linear-gradient(to bottom, deeppink, orange, yellow)';
-    val.style.color = 'black';
-    equationDisplay.style.color = 'black';
+    val.style.color = 'white';
+    equationDisplay.style.color = 'white';
     label.style.color = 'black';
     buttons.forEach((item)=>{
         item.onmouseover = ()=>{
-            item.style.backgroundColor = 'deeppink'
-            item.style.color = 'white'
+            item.style.background = 'deeppink'
+            item.style.color = 'yellow'
         }
         item.onmouseout = ()=>{
-            item.style.backgroundColor = 'black';
+            item.style.background = 'linear-gradient(to right, deeppink, darkorchid, royalblue)';
             item.style.color = 'white';
         }
     })
