@@ -167,14 +167,22 @@ function percentage(v){
     let newEquation = numbers[numbers.length-1] + ' * 0.01 * ' + numbers[0];
     let operators = '+-*/';
     let operate = '';
+    let percentage = numbers[numbers.length-1] + ' * 0.01';
+    let percent = eval(percentage)
     let total = eval(newEquation);
-    val.value = total;
+    
     for(let char of equation){
         if(operators.includes(char)){
             operate += char
         }
     }
+    if(operate === '-' || operate === '+'){
     equation = numbers[0] + operate + total;
+    val.value = total;
+    }else{
+        equation = numbers[0] + operate + percent;
+        val.value = percent;
+    }
     
     
 }
