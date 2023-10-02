@@ -303,7 +303,7 @@ function percentage(v){
 
 function exe(v){
     val.value = eval(equation)
-    equationDisplay.textContent += v;
+    equationDisplay.textContent += v + val.value;
 }
 
 function cancel(){
