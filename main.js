@@ -174,9 +174,8 @@ function percentage(v){
             operate += char
         }
     }
-    if(operate === '+' || operate === '-'){
     equation = numbers[0] + operate + total;
-    }
+    
     
 }
 
