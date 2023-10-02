@@ -124,7 +124,7 @@ function lightmode(){
     val.style.background = 'linear-gradient(to bottom, deeppink, orange, yellow)';
     val.style.color = 'white';
     equationDisplay.style.color = 'white';
-    label.style.color = 'black';
+    label.style.color = 'royalblue';
     buttons.forEach((item)=>{
         item.onmouseover = ()=>{
             item.style.background = 'deeppink'
