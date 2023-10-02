@@ -152,6 +152,7 @@ function squareRoot(){
 function cls(){
     val.value="";
     equationDisplay.textContent = '';
+    equation = '';
 }
 
 function operator(v){
