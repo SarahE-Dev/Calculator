@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main {
+    background: linear-gradient(to right, deeppink, darkorchid, royalblue);
+    height: 100vh;
+    width: 100vw;
+}
+
+#dark, label {
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+#dark {
+    width: 40px;
+}
+
+label {
+    font-size: 22px;
+}
+
+
+
+.calculator {
+    background-color: darkorchid;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 3px;
+    border: 2px solid grey;
+    padding: 20px;
+}
+
+.screencontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.display{
+    position: absolute;
+    top: 10%;
+    right: 15%
+}
+
+#inp {
+    background: linear-gradient(to bottom, deeppink, orange, yellow);
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: -2px 3px;
+    font-size: 40px;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 3px grey;
+}
+
+button:hover {
+    background-color: deeppink;
+}
+
